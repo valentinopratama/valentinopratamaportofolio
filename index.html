@@ -1,45 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mortovitio Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
+<!-- Navbar -->
 <nav>
-  <div class="logo">My Portofolio</div>
+  <div class="logo">Mortovitio</div>
   <div class="menu-toggle">☰</div>
   <ul>
-    <li><a href="#greeting">Greeting</a></li>
+    <li><a href="#greeting" class="active">Greeting</a></li>
     <li><a href="#skills">Skills</a></li>
-    <li><a href="#achievement">Achievement</a></li>
+    <li><a href="#achievement">Achievements</a></li>
     <li><a href="#target">Target & Action</a></li>
     <li><a href="#education">Education</a></li>
   </ul>
 </nav>
 
-<!-- Sections -->
 <!-- Greeting Section -->
-<section id="greeting" class="greeting-section">
+<section id="greeting" class="greeting-section white-bg">
   <div class="greeting-content animate-fade">
     <div class="greeting-text">
       <h1>Hello, I’m <span class="highlight">Valentino Pratama</span></h1>
-      <p>
-        I am a Computer Science student with strong skills in mathematics and a deep interest in Artificial Intelligence. I focus on applying analytical thinking and problem‑solving to develop intelligent and efficient solutions.
-      </p>
+      <p>I am a Computer Science student with strong skills in mathematics and a deep interest in Artificial Intelligence. I focus on applying analytical thinking and problem‑solving to develop intelligent and efficient solutions.</p>
       <div class="button-group">
-        <a href="https://www.linkedin.com/in/valentino-pratama-3743192a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="linkedin-btn">
-          Visit My LinkedIn
-        </a>
-        <a href="https://scholar.google.com/citations?user=btcXaoUAAAAJ&hl=en&oi=ao" target="_blank" class="scholar-btn">
-          Visit Google Scholar
-        </a>
+        <a href="https://www.linkedin.com/in/valentino-pratama-3743192a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="linkedin-btn">Visit LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=btcXaoUAAAAJ&hl=en&oi=ao" target="_blank" class="scholar-btn">Visit Google Scholar</a>
       </div>
     </div>
     <div class="greeting-photo animate-slide">
-      <img src="assets/profile.jpg" alt="Profile Photo">
+      <img src="assets/Profile.jpg" alt="Profile Photo">
     </div>
   </div>
 </section>
@@ -88,6 +82,10 @@
           <h3>Basic SQL</h3>
           <p>Database creation, querying, and manipulation.</p>
         </div>
+      <div class="skill-card">
+        <h3>Basic Machine Learning</h3>
+        <p>Fundamental ML concepts and basic model implementation.</p>
+      </div>
       </div>
     </div>
 
@@ -112,33 +110,122 @@
   </div>
 </section>
 
+<!-- Achievement Section -->
+<section id="achievement" class="achievement-section white-bg">
+  <h2 class="section-title">Achievements</h2>
+  <div class="carousel-container">
+    <div class="carousel-track">
+      <div class="achievement-card">
+        <img src="assets/OSNK.jpg" alt="OSNK Astronomy">
+        <h3>OSNK Astronomy</h3>
+        <p>Participation in National Science Olympiad (Astronomy).</p>
+      </div>
+      <div class="achievement-card">
+        <img src="assets/IAAC.jpg" alt="IAAC Gold Honor">
+        <h3>Gold Honor IAAC</h3>
+        <p>Gold Honor in International Astronomy & Astrophysics Competition.</p>
+      </div>
+      <div class="achievement-card">
+        <img src="assets/IYMC.jpg" alt="IYMC Bronze">
+        <h3>Bronze IYMC</h3>
+        <p>Bronze Award in International Youth Math Challenge.</p>
+      </div>
+      <div class="achievement-card">
+        <img src="assets/ISITIA.jpg" alt="ISITAI Seminar">
+        <h3>ISITAI Seminar</h3>
+        <p>Attended International Seminar on IT & AI (ITS).</p>
+      </div>
+    </div>
+  </div>
+  <div class="carousel-indicators">
+    <span class="indicator active"></span>
+    <span class="indicator"></span>
+    <span class="indicator"></span>
+    <span class="indicator"></span>
+  </div>
+</section>
 
-<section id="achievement" class="white-bg">Achievement Section</section>
-<section id="target" class="blue-bg">Target & Action Section</section>
+<!-- Target & Action Section -->
+<!-- Target & Action Section -->
+<section id="target" class="target-section">
+  <h2 class="section-title">Target & Action</h2>
+  <div class="target-container">
+    
+    <!-- Short Term Goals -->
+    <div class="target-card">
+      <h3>Short-Term Goals</h3>
+      <p>Publish research papers indexed in SINTA, enroll in advanced English courses, enhance programming and AI skills, and expand knowledge in Robotics and IoT.</p>
+    </div>
+    
+    <!-- Mid Term Goals -->
+    <div class="target-card">
+      <h3>Mid-Term Goals</h3>
+      <p>Obtain a scholarship and pursue a Master's degree abroad to broaden academic and professional expertise.</p>
+    </div>
+    
+    <!-- Long Term Goals -->
+    <div class="target-card">
+      <h3>Long-Term Goals</h3>
+      <p>Focus on research during the Master's program, secure funding for a Doctoral degree, and advance a professional career as a university lecturer.</p>
+    </div>
+    
+  </div>
+</section>
+
 
 <!-- Education Section -->
 <section id="education" class="education-section">
   <h2 class="section-title">Education</h2>
 
-  <div class="education-list">
-    <div class="education-card">
-      <h3>TK Bruder Melati Pontianak</h3>
-      <span class="year">(2011 - 2012)</span>
+  <div class="timeline">
+    <div class="timeline-item left">
+      <div class="timeline-logo">
+        <img src="assets/LogoTK.png" alt="TK Icon">
+      </div>
+      <div class="content">
+        <h3>TK Bruder Melati Pontianak</h3>
+        <span class="year">(2011 - 2012)</span>
+      </div>
     </div>
 
-    <div class="education-card">
-      <h3>SD Bruder Melati Pontianak</h3>
-      <span class="year">(2012 - 2018)</span>
+    <div class="timeline-item right">
+      <div class="timeline-logo">
+        <img src="assets/LogoSD.png" alt="SD Icon">
+      </div>
+      <div class="content">
+        <h3>SD Bruder Melati Pontianak</h3>
+        <span class="year">(2012 - 2018)</span>
+      </div>
     </div>
 
-    <div class="education-card">
-      <h3>SMP Bruder Pontianak</h3>
-      <span class="year">(2018 - 2021)</span>
+    <div class="timeline-item left">
+      <div class="timeline-logo">
+        <img src="assets/LogoSMP.png" alt="SMP Icon">
+      </div>
+      <div class="content">
+        <h3>SMP Bruder Pontianak</h3>
+        <span class="year">(2018 - 2021)</span>
+      </div>
     </div>
 
-    <div class="education-card">
-      <h3>SMA Santo Paulus Pontianak</h3>
-      <span class="year">(2021 - 2024)</span>
+    <div class="timeline-item right">
+      <div class="timeline-logo">
+        <img src="assets/LogoSMA.png" alt="SMA Icon">
+      </div>
+      <div class="content">
+        <h3>SMA Santo Paulus Pontianak</h3>
+        <span class="year">(2021 - 2024)</span>
+      </div>
+    </div>
+
+    <div class="timeline-item left">
+      <div class="timeline-logo">
+        <img src="assets/LogoUniv.png" alt="BINUS Icon">
+      </div>
+      <div class="content">
+        <h3>S1 Computer Science - BINUS University</h3>
+        <span class="year">(2024 - Present)</span>
+      </div>
     </div>
   </div>
 </section>
