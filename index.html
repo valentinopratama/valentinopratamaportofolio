@@ -3,14 +3,20 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mortovitio Portfolio</title>
+  <title>Valentino Pratama — Portfolio</title>
   <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <!-- Navbar -->
+<<<<<<< HEAD
 <nav>
   <div class="logo">My Portofolio</div>
+=======
+<nav id="navbar">
+  <div class="logo">Motovolio</div>
+>>>>>>> 3cd2d2b (Update website)
   <div class="menu-toggle">☰</div>
   <ul>
     <li><a href="#greeting" class="active">Greeting</a></li>
@@ -18,102 +24,102 @@
     <li><a href="#achievement">Achievements</a></li>
     <li><a href="#target">Target & Action</a></li>
     <li><a href="#education">Education</a></li>
+    <div class="dark-mode-switch">
+      <span id="modeLabel">Dark</span>
+      <input type="checkbox" id="darkModeToggle">
+      <label for="darkModeToggle"></label>
+    </div>
   </ul>
 </nav>
 
-<!-- Greeting Section -->
-<section id="greeting" class="greeting-section white-bg">
-  <div class="greeting-content animate-fade">
-    <div class="greeting-text">
-      <h1>Hello, I’m <span class="highlight">Valentino Pratama</span></h1>
-      <p>I am a Computer Science student with strong skills in mathematics and a deep interest in Artificial Intelligence. I focus on applying analytical thinking and problem‑solving to develop intelligent and efficient solutions.</p>
+<!-- Hero / Greeting -->
+<section id="greeting" class="greeting-section">
+  <canvas id="particles-canvas"></canvas>
+  <div class="greeting-content">
+    <div class="greeting-text reveal">
+      <div class="eyebrow">Hello, World!</div>
+      <h1>I'm <span class="highlight">Valentino Pratama</span></h1>
+      <div class="typing-line"><span id="typing-text"></span><span id="typing-cursor"></span></div>
+      <p>Computer Science student with strong skills in mathematics and a deep interest in Artificial Intelligence. Applying analytical thinking and problem‑solving to develop intelligent and efficient solutions.</p>
       <div class="button-group">
-        <a href="https://www.linkedin.com/in/valentino-pratama-3743192a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="linkedin-btn">Visit LinkedIn</a>
-        <a href="https://scholar.google.com/citations?user=btcXaoUAAAAJ&hl=en&oi=ao" target="_blank" class="scholar-btn">Visit Google Scholar</a>
+        <a href="https://www.linkedin.com/in/valentino-pratama-3743192a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="linkedin-btn">LinkedIn ↗</a>
+        <a href="https://scholar.google.com/citations?user=btcXaoUAAAAJ&hl=en&oi=ao" target="_blank" class="scholar-btn">Scholar ↗</a>
+        <a href="assets/T137_CV.png" download class="cv-btn">Download CV ↓</a>
       </div>
     </div>
-    <div class="greeting-photo animate-slide">
-      <img src="assets/Profile.jpg" alt="Profile Photo">
+    <div class="greeting-photo reveal">
+      <img src="assets/Profile.jpg" alt="Valentino Pratama">
     </div>
   </div>
 </section>
 
-<!-- Skills Section -->
+<!-- Skills -->
 <section id="skills" class="skills-section">
-  <h2 class="section-title">Skills</h2>
-
-  <!-- Tabs -->
-  <div class="skills-tabs">
+  <h2 class="section-title reveal">Skills</h2>
+  <div class="skills-tabs reveal">
     <button class="tab-button active" data-tab="programming">Programming & Technical</button>
     <button class="tab-button" data-tab="tools">Tools & Others</button>
   </div>
-
-  <!-- Tab Content -->
   <div class="skills-content">
-
-    <!-- Programming Tab -->
     <div class="tab-content active" id="programming">
       <div class="skills-grid">
-        <div class="skill-card">
+        <div class="skill-card reveal">
           <h3>Mathematics</h3>
           <p>Strong foundation in mathematical concepts, problem-solving, and logical reasoning.</p>
         </div>
-        <div class="skill-card">
+        <div class="skill-card reveal">
           <h3>Python</h3>
           <p>Experienced with NumPy, Pandas, and Matplotlib for data analysis & visualization.</p>
         </div>
-        <div class="skill-card">
-          <h3>Basic Web Development</h3>
+        <div class="skill-card reveal">
+          <h3>Web Development</h3>
           <p>HTML, CSS basics for creating responsive websites.</p>
         </div>
-        <div class="skill-card">
+        <div class="skill-card reveal">
           <h3>Intermediate C</h3>
           <p>Problem solving, data structures, and algorithms.</p>
         </div>
-        <div class="skill-card">
+        <div class="skill-card reveal">
           <h3>Basic Java</h3>
           <p>Object-Oriented Programming fundamentals.</p>
         </div>
-        <div class="skill-card">
+        <div class="skill-card reveal">
           <h3>Basic MATLAB</h3>
           <p>Mathematical modeling and basic simulations.</p>
         </div>
-        <div class="skill-card">
+        <div class="skill-card reveal">
           <h3>Basic SQL</h3>
           <p>Database creation, querying, and manipulation.</p>
         </div>
-      <div class="skill-card">
-        <h3>Basic Machine Learning</h3>
-        <p>Fundamental ML concepts and basic model implementation.</p>
-      </div>
+        <div class="skill-card reveal">
+          <h3>Machine Learning</h3>
+          <p>Fundamental ML concepts and basic model implementation.</p>
+        </div>
       </div>
     </div>
-
-    <!-- Tools Tab -->
     <div class="tab-content" id="tools">
       <div class="skills-grid">
-        <div class="skill-card">
+        <div class="skill-card reveal">
           <h3>Microsoft Office</h3>
           <p>Word, Excel, and PowerPoint for documentation & presentations.</p>
         </div>
-        <div class="skill-card">
+        <div class="skill-card reveal">
           <h3>Canva</h3>
           <p>Graphic design for presentations and publications.</p>
         </div>
-        <div class="skill-card">
+        <div class="skill-card reveal">
           <h3>Photography</h3>
           <p>Experienced in using mirrorless & DSLR cameras.</p>
         </div>
       </div>
     </div>
-
   </div>
 </section>
 
-<!-- Achievement Section -->
-<section id="achievement" class="achievement-section white-bg">
-  <h2 class="section-title">Achievements</h2>
-  <div class="carousel-container">
+<!-- Achievements -->
+<section id="achievement" class="achievement-section">
+  <h2 class="section-title reveal">Achievements</h2>
+  <div class="carousel-container reveal">
     <div class="carousel-track">
       <div class="achievement-card">
         <img src="assets/OSNK.jpg" alt="OSNK Astronomy">
@@ -145,91 +151,66 @@
   </div>
 </section>
 
-<!-- Target & Action Section -->
-<!-- Target & Action Section -->
+<!-- Target & Action -->
 <section id="target" class="target-section">
-  <h2 class="section-title">Target & Action</h2>
+  <h2 class="section-title reveal">Target & Action</h2>
   <div class="target-container">
-    
-    <!-- Short Term Goals -->
-    <div class="target-card">
+    <div class="target-card reveal">
       <h3>Short-Term Goals</h3>
       <p>Publish research papers indexed in SINTA, enroll in advanced English courses, enhance programming and AI skills, and expand knowledge in Robotics and IoT.</p>
     </div>
-    
-    <!-- Mid Term Goals -->
-    <div class="target-card">
+    <div class="target-card reveal">
       <h3>Mid-Term Goals</h3>
       <p>Obtain a scholarship and pursue a Master's degree abroad to broaden academic and professional expertise.</p>
     </div>
-    
-    <!-- Long Term Goals -->
-    <div class="target-card">
+    <div class="target-card reveal">
       <h3>Long-Term Goals</h3>
       <p>Focus on research during the Master's program, secure funding for a Doctoral degree, and advance a professional career as a university lecturer.</p>
     </div>
-    
   </div>
 </section>
 
-
-<!-- Education Section -->
+<!-- Education -->
 <section id="education" class="education-section">
-  <h2 class="section-title">Education</h2>
-
+  <h2 class="section-title reveal">Education</h2>
   <div class="timeline">
     <div class="timeline-item left">
-      <div class="timeline-logo">
-        <img src="assets/LogoTK.png" alt="TK Icon">
-      </div>
+      <div class="timeline-logo"><img src="assets/LogoTK.png" alt="TK"></div>
       <div class="content">
         <h3>TK Bruder Melati Pontianak</h3>
-        <span class="year">(2011 - 2012)</span>
+        <span class="year">2011 – 2012</span>
       </div>
     </div>
-
     <div class="timeline-item right">
-      <div class="timeline-logo">
-        <img src="assets/LogoSD.png" alt="SD Icon">
-      </div>
+      <div class="timeline-logo"><img src="assets/LogoSD.png" alt="SD"></div>
       <div class="content">
         <h3>SD Bruder Melati Pontianak</h3>
-        <span class="year">(2012 - 2018)</span>
+        <span class="year">2012 – 2018</span>
       </div>
     </div>
-
     <div class="timeline-item left">
-      <div class="timeline-logo">
-        <img src="assets/LogoSMP.png" alt="SMP Icon">
-      </div>
+      <div class="timeline-logo"><img src="assets/LogoSMP.png" alt="SMP"></div>
       <div class="content">
         <h3>SMP Bruder Pontianak</h3>
-        <span class="year">(2018 - 2021)</span>
+        <span class="year">2018 – 2021</span>
       </div>
     </div>
-
     <div class="timeline-item right">
-      <div class="timeline-logo">
-        <img src="assets/LogoSMA.png" alt="SMA Icon">
-      </div>
+      <div class="timeline-logo"><img src="assets/LogoSMA.png" alt="SMA"></div>
       <div class="content">
         <h3>SMA Santo Paulus Pontianak</h3>
-        <span class="year">(2021 - 2024)</span>
+        <span class="year">2021 – 2024</span>
       </div>
     </div>
-
     <div class="timeline-item left">
-      <div class="timeline-logo">
-        <img src="assets/LogoUniv.png" alt="BINUS Icon">
-      </div>
+      <div class="timeline-logo"><img src="assets/LogoUniv.png" alt="BINUS"></div>
       <div class="content">
-        <h3>S1 Computer Science - BINUS University</h3>
-        <span class="year">(2024 - Present)</span>
+        <h3>S1 Computer Science — BINUS University</h3>
+        <span class="year">2024 – Present</span>
       </div>
     </div>
   </div>
 </section>
-
 
 <script src="script.js"></script>
 </body>
